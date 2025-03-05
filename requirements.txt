@@ -1,18 +1,24 @@
-omegaconf~=2.3.0
-torch~=2.0
-tqdm
-einops
-transformers~=4.41.1
-vocos
-nemo_text_processing
-requests
-fastapi
-
-tokenizers
-transformers
-vector-quantize-pytorch
-soundfile
-
-loguru
-pydantic
-WeTextProcessing
+# ChatTTS 和 PyTorch 推理核心依赖
+torch>=2.0.0
+# FastAPI Web 框架
+fastapi>=0.95.0
+# ASGI 服务器，用于运行 FastAPI
+uvicorn>=0.20.0
+# 数据验证和模型定义
+pydantic>=1.10.0
+# 处理音频文件（如 WAV）
+soundfile>=0.12.1
+# 日志记录
+loguru>=0.6.0
+# ChatTTS 库,若无官方包需手动指定
+git+https://github.com/2noise/ChatTTS.git@main#egg=chattts
+# 数值计算（ChatTTS 内部可能依赖）
+numpy>=1.23.0
+# 正则表达式处理（如 replace_non_alphanumeric）
+regex>=2022.10.31
+# FastAPI 处理 multipart 数据
+python-multipart>=0.0.5
+# 支持 MP3 输出
+pydub>=0.25.1
+# 语速调整
+librosa>=0.10.0

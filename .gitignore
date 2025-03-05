@@ -1,0 +1,70 @@
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 虚拟环境
+venv/
+env/
+.venv/
+ENV/
+
+# 依赖管理
+Pipfile.lock
+requirements.txt.lock
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+.#*
+
+# 音频输出文件
+*.wav
+*.mp3
+/tmp/*.wav
+/tmp/*.mp3
+
+# IDE 和编辑器
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 模型和权重文件（可选）
+*.pt
+*.pth
+*.bin
+model_weights/
+assest/*.pt  # 如果你想保留 spk_stat.pt，可以改为具体路径
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 其他
+*.cache
+*.coverage
+coverage.xml
+*.cover
+*.pytest_cache/
